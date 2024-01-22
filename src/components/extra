@@ -1,0 +1,154 @@
+// import React, { useState, useEffect } from "react";
+
+// import { JWT_TOEKN, PRODUCT_ID } from "./constants";
+
+// const Login = () => {
+
+// const [name, setName] = useState("");
+
+// const [email, setEmail] = useState("");
+
+// const [password, setPassWord] = useState("");
+
+// const handleNameChange = (e) => {
+
+// setName(e.target.value);
+
+// };
+
+// const handleEmailChange = (e) => {
+
+// setEmail(e.target.value);
+
+// };
+
+// const handlePasswordChange = (e) => {
+
+// setPassWord(e.target.value);
+
+// };
+
+// const handleSubmit = async (e) => {
+
+// e.preventDefault();
+
+// const userObject = {
+
+// name,
+
+// email,
+
+// password,
+
+// appType: "ecommerce",
+
+// };
+
+// try {
+
+// const response = await fetch(
+
+// "https://academics.newtonschool.co/api/v1/user/signup",
+
+// {
+
+// method: "POST",
+
+// headers: {
+
+// projectID: "mmvz5wuhf8k7",
+
+// Authorization: "Bearer MeNZucmSt6SSsdHB6RS4nqOlp4bfdWD6",
+
+// "Content-Type": "application/json",
+
+// "Access-Control-Allow-Origin": "*",
+
+// },
+
+// body: JSON.stringify({ ...userObject }),
+
+// }
+
+// );
+
+// console.log("response", response);
+
+// if (!response.ok) {
+
+// alert("SignUP failed");
+
+// return;
+
+// }
+
+// alert("You are successfully Registered");
+
+// } catch (error) {
+
+// alert("Error Please check");
+
+// }
+
+// };
+
+// return (
+
+// <div>
+
+// <h1>Login Form </h1>
+
+// <form onSubmit={handleSubmit}>
+
+// <label>Name</label>
+
+// <input
+
+// type="text"
+
+// id="name"
+
+// value={name}
+
+// onChange={handleNameChange}
+
+// required
+
+// />
+
+// <label>Email</label>
+
+// <input
+
+// type="email"
+
+// id="email"
+
+// value={email}
+
+// onChange={handleEmailChange}
+
+// required
+
+// />
+
+// <label>Password</label>
+
+// <input
+
+// type="password"
+
+// id="password"
+
+// value={password}
+
+// onChange={handlePasswordChange}
+
+// required
+
+// />
+
+// <button type="su
+
+
+
